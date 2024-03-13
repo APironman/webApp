@@ -1,0 +1,20 @@
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- Datasource -->
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/first-web-app
+		</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Root@123</property>
+
+		<!-- Hibernate Properties -->
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="hbm2ddl.auto">create</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+
+		<!-- Mapping Details -->
+		<mapping class="com.prowings.entity.Student" />
+	</session-factory>
+</hibernate-configuration>

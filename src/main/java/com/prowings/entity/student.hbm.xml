@@ -1,0 +1,16 @@
+<hibernate-mapping>
+	<class name="com.prowings.hibernate.Student" table="Student">
+		<id name="id" type="int" column="id">
+			<generator class="assigned" />
+		</id>
+		<property name="name">
+			<column name="name" />
+		</property>
+		<property name="subject">
+			<column name="subject" />
+		</property>
+		<property name="marks" type = "int">
+			<column name="marks" />
+		</property>
+	</class>
+</hibernate-mapping>
